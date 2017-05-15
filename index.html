@@ -21,7 +21,8 @@
   <div class="center aligned column">
 
     <div class="ui secondary pointing compact menu">
-      <a class="item" href='/'> Home </a>
+      <a class="item <- is_home ? active: ''>" href='/'> Blog </a>
+      <a class="item" href='/portfolio'> Portfolio </a>
       <a class="item"href='/archives'> Archive </a>
     </div>
 
@@ -54,7 +55,7 @@
     </div>
     <div class="item">
       <i class="marker icon"></i>
-      <div class="content">
+      <div class="content">œß
         The Captial of Red Continent
       </div>
     </div>
@@ -62,6 +63,12 @@
       <i class="mail icon"></i>
       <div class="content">
         <a href="mailto:tianchuanting@gmail.com">tianchuanting@gmail.com</a>
+      </div>
+    </div>
+    <div class="item">
+      <i class="linkedin Linkedin Square icon"></i>
+      <div class="content">
+        <a href="www.linkedin.com/in/louis-tian">www.linkedin.com/in/louis-tian</a>
       </div>
     </div>
   </div>
@@ -88,10 +95,9 @@
       <div class="post subtitle">My setup for machine learning</div>
       <div class="post date">01 May 2017</div>
       <div class='ui divider'></div>
-      <p>Recently, I started became addicted to the machine learning competitions on Kaggle.com.</p>
-<p>I am relatively new to the whole ML business. After some long waiting for a died kernel or <code>Memory Error</code>, I realized my MacBook Pro isn’t up for this kind of tasks. I started by contemplating invested in a new desktop. But hey it’s 2017 having a desktop at home isn’t the sexist idea. Then there comes Google offer $300 dollar for trying their cloud platform.</p>
-<p>Hardware isn’t the only problem. In ML, <code>Python</code> is the king. And when doing any kind of numerical stuff in <code>Python</code>, <code>Jupyter</code> is the go-to tool. However, keeping proper versioning for <code>jupyter notebook</code> has always been a difficult task.</p>
-<p>And the perfect solution is ? <code>Jupyter</code> + <code>Hydrogen</code>. Here is how.</p>
+      <p>Recently, I became obsessed with Kaggle. I am still new to this whole ML business. And not long after a few <code>died kernels</code> or <code>Memory Error</code>, I knew my MacBook Pro is not really up for the tasks at hand. I started contemplating on building a new desktop system. My old one is already half a decade old. But hey it’s 2017 having a desktop isn’t the sexist idea. Then there comes Google offer $300 credit for trying their cloud platform. Google Compute Engine become an obvious choice.</p>
+<p>Hardware isn’t the only problem. In ML, <code>Python</code> is THE King. And when comes scientific computation <code>Jupyter</code> is the standard. However, keeping proper versioning in <code>Jupyter notebook</code> has always been a difficult task. Luckily, there is also solution to that as well. ‘Atom’ with <code>Hydrogen</code>.</p>
+<p>This post is about how setup this powerful combo? And start ruling the Machine learning word.</p>
 <a id="more"></a>
 <h3 id="Why-Google-Compute-Engine-GCE"><a href="#Why-Google-Compute-Engine-GCE" class="headerlink" title="Why Google Compute Engine (GCE)?"></a>Why Google Compute Engine (GCE)?</h3><p>There are two main reasons:</p>
 <ol>
