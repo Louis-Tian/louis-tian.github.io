@@ -4,93 +4,38 @@
   <link rel="stylesheet" href="/dist/semantic.min.css">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/atom-one-dark.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+
   <script src="/dist/semantic.min.js"></script>
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
 </head>
 
 <body>
+  <div class="ui fluid container" id="top-menu">
+    <div class="ui secondary pointing menu">
   <div class="ui container">
-    <div>
-  <h1 class='page title ui center aligned header'>
-    Organised Haystack
-  </h1>
-  <img class="ui centered logo image" src='/images/scribble.png' width="70px"/>
+    <h1 class='page title ui aligned header'> Organised Haystack </h1>
+  </div>
+  <a class="item " href='/'> Blog </a>
+  <a class="item " href='/portfolio'> Portfolio </a>
+  <a class="item" href='/archives'> Archive </a>
+  <a class="item" href='/cv'> CV </a>
 </div>
-
-    <div class="ui one column grid">
-  <div class="center aligned column">
-
-    <div class="ui secondary pointing compact menu">
-      <a class="item <- is_home ? active: ''>" href='/'> Blog </a>
-      <a class="item" href='/portfolio'> Portfolio </a>
-      <a class="item"href='/archives'> Archive </a>
-      <a class="item"href='/cv'> CV </a>
-    </div>
 
   </div>
-</div>
-
+  <div class="ui container main-content">
     <div class="ui stackable grid">
-
-      <div class="four wide column">
-        <div class="ui teal raised segment">
-          <div>
-  <img class="ui tiny circular image" src="/images/photo.jpg">
-  <h3>Louis Tian</h3>
-  <i>I write in pseudo-english.
-    This is a blog mostly for myself to organise the my thoughts,
-    but your are welcome to wonder around.
-  </i>
-  <h5>
-    Economist &middot;
-    💻 Data Scientist &middot;
-    🌐 Web Dev &middot;
-    ☕ Caffeine Addict
-  </h5>
-  <div class="ui list">
-    <div class="item">
-      <i class="github icon"></i>
-      <div class="content">
-        https://github.com/Louis-Tian
-      </div>
-    </div>
-    <div class="item">
-      <i class="marker icon"></i>
-      <div class="content">œß
-        The Captial of Red Continent
-      </div>
-    </div>
-    <div class="item">
-      <i class="mail icon"></i>
-      <div class="content">
-        <a href="mailto:tianchuanting@gmail.com">tianchuanting@gmail.com</a>
-      </div>
-    </div>
-    <div class="item">
-      <i class="linkedin Linkedin Square icon"></i>
-      <div class="content">
-        <a href="www.linkedin.com/in/louis-tian">www.linkedin.com/in/louis-tian</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-        </div>
-        <div class="ui vertical segment">
-          <h4>Recent Posts</h4>
-          <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017-05-17-Exploratory-data-analysis-with-STYLE/">Exploratory Data Analysis w/ STYLE</a></li><li class="post-list-item"><a class="post-list-link" href="/2017-05-01-hydrogen_gce/">Hydrogen + Google Compute Engine</a></li><li class="post-list-item"><a class="post-list-link" href="/2017-04-03-montyHall/">Monty Hall @ Done Right</a></li></ul>
-        </div>
-        <div class="ui vertical segment">
-          <h4>Tags</h4>
-          <a href="/tags/statistics/" style="font-size: 10px; color: #808080">statistics</a> <a href="/tags/R/" style="font-size: 10px; color: #808080">R</a> <a href="/tags/Machine-learning/" style="font-size: 10px; color: #808080">Machine learning</a> <a href="/tags/Hydrogen/" style="font-size: 10px; color: #808080">Hydrogen</a> <a href="/tags/Google-Compute-Engine/" style="font-size: 10px; color: #808080">Google Compute Engine</a> <a href="/tags/Exploratory-Data-Analysis/" style="font-size: 10px; color: #808080">Exploratory Data Analysis</a> <a href="/tags/Atom/" style="font-size: 10px; color: #808080">Atom</a>
-        </div>
-      </div>
-
-      <div class="twelve wide column"><div class="posts">
+      <div class="twelve wide column">
+        <div class="posts">
   <div class="ui divided items">
     <div class="post ">
   <div class="ui stackable grid">
-    <div class="twelve wide column">
+    <div class="fourteen wide column">
       <div class="post title">Exploratory Data Analysis w/ STYLE</div>
       <div class="post subtitle">Generate Beautiful Data Analysis Report in R</div>
       <div class="post date">17 May 2017</div>
@@ -125,8 +70,62 @@ s.setAttribute('data-timestamp', +new Date());
 
   </div>
 </div>
+
+      </div>
+
+      <div class="four wide column">
+        <div class="ui">
+          <div>
+  <img class="ui tiny circular image" src="/images/photo.jpg">
+  <h3>Louis Tian</h3>
+  <i>I write in pseudo-english.
+    This is a blog mostly for myself to organise the my thoughts,
+    but your are welcome to wonder around.
+  </i>
+  <h5>
+    Economist &middot;
+    💻 Data Scientist &middot;
+    🌐 Web Dev &middot;
+    ☕ Caffeine Addict
+  </h5>
+  <div class="ui list">
+    <div class="item">
+      <i class="github icon"></i>
+      <div class="content">
+        https://github.com/Louis-Tian
+      </div>
+    </div>
+    <div class="item">
+      <i class="marker icon"></i>
+      <div class="content">
+        The Captial of Red Continent
+      </div>
+    </div>
+    <div class="item">
+      <i class="mail icon"></i>
+      <div class="content">
+        <a href="mailto:tianchuanting@gmail.com">tianchuanting@gmail.com</a>
+      </div>
+    </div>
+    <div class="item">
+      <i class="linkedin Linkedin Square icon"></i>
+      <div class="content">
+        <a href="www.linkedin.com/in/louis-tian">www.linkedin.com/in/louis-tian</a>
+      </div>
+    </div>
+  </div>
 </div>
 
+        </div>
+        <div class="ui vertical segment">
+          <h4>Recent Posts</h4>
+          <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017-05-28-hydrogen_gce/">Hydrogen + Google Compute Engine</a></li><li class="post-list-item"><a class="post-list-link" href="/2017-05-17-Exploratory-data-analysis-with-STYLE/">Exploratory Data Analysis w/ STYLE</a></li><li class="post-list-item"><a class="post-list-link" href="/2017-04-03-montyHall/">Monty Hall @ Done Right</a></li></ul>
+        </div>
+        <div class="ui vertical segment">
+          <h4>Tags</h4>
+          <a href="/tags/statistics/" style="font-size: 10px; color: #808080">statistics</a> <a href="/tags/R/" style="font-size: 10px; color: #808080">R</a> <a href="/tags/Machine-learning/" style="font-size: 10px; color: #808080">Machine learning</a> <a href="/tags/Hydrogen/" style="font-size: 10px; color: #808080">Hydrogen</a> <a href="/tags/Google-Compute-Engine/" style="font-size: 10px; color: #808080">Google Compute Engine</a> <a href="/tags/Exploratory-Data-Analysis/" style="font-size: 10px; color: #808080">Exploratory Data Analysis</a> <a href="/tags/Atom/" style="font-size: 10px; color: #808080">Atom</a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -148,7 +147,12 @@ s.setAttribute('data-timestamp', +new Date());
   </div>
 </div>
 
-  <script>hljs.initHighlightingOnLoad('atom-one-dark');</script>
+  <script>
+    hljs.initHighlightingOnLoad('atom-one-dark');
+    $('.special.cards .image').dimmer({
+      on: 'hover'
+    });
+  </script>
 </body>
 
 </html>

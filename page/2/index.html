@@ -4,160 +4,55 @@
   <link rel="stylesheet" href="/dist/semantic.min.css">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/atom-one-dark.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+
   <script src="/dist/semantic.min.js"></script>
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
 </head>
 
 <body>
+  <div class="ui fluid container" id="top-menu">
+    <div class="ui secondary pointing menu">
   <div class="ui container">
-    <div>
-  <h1 class='page title ui center aligned header'>
-    Organised Haystack
-  </h1>
-  <img class="ui centered logo image" src='/images/scribble.png' width="70px"/>
+    <h1 class='page title ui aligned header'> Organised Haystack </h1>
+  </div>
+  <a class="item active" href='/'> Blog </a>
+  <a class="item " href='/portfolio'> Portfolio </a>
+  <a class="item" href='/archives'> Archive </a>
+  <a class="item" href='/cv'> CV </a>
 </div>
-
-    <div class="ui one column grid">
-  <div class="center aligned column">
-
-    <div class="ui secondary pointing compact menu">
-      <a class="item <- is_home ? active: ''>" href='/'> Blog </a>
-      <a class="item" href='/portfolio'> Portfolio </a>
-      <a class="item"href='/archives'> Archive </a>
-      <a class="item"href='/cv'> CV </a>
-    </div>
 
   </div>
-</div>
-
+  <div class="ui container main-content">
     <div class="ui stackable grid">
-
-      <div class="four wide column">
-        <div class="ui teal raised segment">
-          <div>
-  <img class="ui tiny circular image" src="/images/photo.jpg">
-  <h3>Louis Tian</h3>
-  <i>I write in pseudo-english.
-    This is a blog mostly for myself to organise the my thoughts,
-    but your are welcome to wonder around.
-  </i>
-  <h5>
-    Economist &middot;
-    💻 Data Scientist &middot;
-    🌐 Web Dev &middot;
-    ☕ Caffeine Addict
-  </h5>
-  <div class="ui list">
-    <div class="item">
-      <i class="github icon"></i>
-      <div class="content">
-        https://github.com/Louis-Tian
-      </div>
-    </div>
-    <div class="item">
-      <i class="marker icon"></i>
-      <div class="content">œß
-        The Captial of Red Continent
-      </div>
-    </div>
-    <div class="item">
-      <i class="mail icon"></i>
-      <div class="content">
-        <a href="mailto:tianchuanting@gmail.com">tianchuanting@gmail.com</a>
-      </div>
-    </div>
-    <div class="item">
-      <i class="linkedin Linkedin Square icon"></i>
-      <div class="content">
-        <a href="www.linkedin.com/in/louis-tian">www.linkedin.com/in/louis-tian</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-        </div>
-        <div class="ui vertical segment">
-          <h4>Recent Posts</h4>
-          <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017-05-17-Exploratory-data-analysis-with-STYLE/">Exploratory Data Analysis w/ STYLE</a></li><li class="post-list-item"><a class="post-list-link" href="/2017-05-01-hydrogen_gce/">Hydrogen + Google Compute Engine</a></li><li class="post-list-item"><a class="post-list-link" href="/2017-04-03-montyHall/">Monty Hall @ Done Right</a></li></ul>
-        </div>
-        <div class="ui vertical segment">
-          <h4>Tags</h4>
-          <a href="/tags/statistics/" style="font-size: 10px; color: #808080">statistics</a> <a href="/tags/R/" style="font-size: 10px; color: #808080">R</a> <a href="/tags/Machine-learning/" style="font-size: 10px; color: #808080">Machine learning</a> <a href="/tags/Hydrogen/" style="font-size: 10px; color: #808080">Hydrogen</a> <a href="/tags/Google-Compute-Engine/" style="font-size: 10px; color: #808080">Google Compute Engine</a> <a href="/tags/Exploratory-Data-Analysis/" style="font-size: 10px; color: #808080">Exploratory Data Analysis</a> <a href="/tags/Atom/" style="font-size: 10px; color: #808080">Atom</a>
-        </div>
-      </div>
-
-      <div class="twelve wide column"><div class="posts">
+      <div class="twelve wide column">
+        <div class="posts">
   <div class="ui divided items">
     
       <div class="post ">
   <div class="ui stackable grid">
-    <div class="twelve wide column">
-      <div class="post title">Hydrogen + Google Compute Engine</div>
-      <div class="post subtitle">My setup for machine learning</div>
-      <div class="post date">01 May 2017</div>
+    <div class="fourteen wide column">
+      <div class="post title">Exploratory Data Analysis w/ STYLE</div>
+      <div class="post subtitle">Generate Beautiful Data Analysis Report in R</div>
+      <div class="post date">17 May 2017</div>
       <div class='ui divider'></div>
       <div class="post content">
-        <p>Recently, I became obsessed with Kaggle. I am still new to this whole ML business. And not long after a few <code>died kernels</code> or <code>Memory Error</code>, I knew my MacBook Pro is not really up for the tasks at hand. I started contemplating on building a new desktop system. My old one is already half a decade old. But hey it’s 2017 having a desktop isn’t the sexist idea. Then there comes Google offer $300 credit for trying their cloud platform. Google Compute Engine become an obvious choice.</p>
-<p>Hardware isn’t the only problem. In ML, <code>Python</code> is THE King. And when comes scientific computation <code>Jupyter</code> is the standard. However, keeping proper versioning in <code>Jupyter notebook</code> has always been a difficult task. Luckily, there is also solution to that as well. ‘Atom’ with <code>Hydrogen</code>.</p>
-<p>This post is about how setup this powerful combo? And start ruling the Machine learning word.</p>
-<a id="more"></a>
-<h3 id="Why-Google-Compute-Engine-GCE"><a href="#Why-Google-Compute-Engine-GCE" class="headerlink" title="Why Google Compute Engine (GCE)?"></a>Why Google Compute Engine (GCE)?</h3><p>There are two main reasons:</p>
-<ol>
-<li>Scalable</li>
-<li>Economical</li>
-</ol>
-<p>Using GCE you can scale up and down as you wish, from a free single shared core micro instance up a 64-core beast machine with 416GB of RAM and 8 Tesla K80 GPU. If that’s not enough, running a cluster of machines and sky is your limit.</p>
-<p>This is not only more flexible but also heaps cheaper. Economy of scale, as an economist would say. And that’s not even the best part. Most of the time you can even run with “Preemptible” instances which makes things even cheaper.</p>
-<p>I won’t go into the details of how to get an Google Compute Engine instance up and running. The guys<br>at Google made it super easy, just go checkout the documentation <a href="https://cloud.google.com/docs/" target="_blank" rel="external">here</a></p>
-<p>I don’t really use AWS, so I won’t comment on the difference. But the most steps will be the same for both platforms, other than the parts involves <code>gcloud</code> commands.</p>
-<p>The rest of the post will assume you have GCE setup and has the Google Cloud SDK installed.</p>
-<h3 id="Why-Hydrogen"><a href="#Why-Hydrogen" class="headerlink" title="Why Hydrogen ?"></a>Why Hydrogen ?</h3><p><code>Hydrogen</code> is a <code>Atom</code> plugin. A very cool one. There are two main reasons of using it instead of vanilla <code>Jupyter</code> notebook in browser:</p>
-<ol>
-<li>Stay within the wonderful world of Atom.</li>
-<li>Finally, proper version control for your Jupiter notebooks.</li>
-</ol>
-<p>Atom has a who bunch of goodies to offer, VIM key binding, Git integration.</p>
-<p>We all love Jupiter but VC is hard for Jupiter notebooks. It’s <code>html</code> with both inputs and outputs.<br>Try to a diff between two commit… Let’s face it, it’s crap. With Hydrogen, finally, you can have a<br>best of both world. Unlike Jupiter notebook, you write in a plain <code>.py</code> file.</p>
-<h3 id="Set-Thing-UP"><a href="#Set-Thing-UP" class="headerlink" title="Set Thing UP"></a>Set Thing UP</h3><h4 id="1-Launch-google-cloud-engine"><a href="#1-Launch-google-cloud-engine" class="headerlink" title="1. Launch google cloud engine"></a>1. Launch google cloud engine</h4><pre><code class="shell">
-$ gcloud compute instance start instance_name --zone=your_instance_zoon
-</code></pre>
+        <a id="more"></a>
+<p>This project showcases how to do exploratory data analysis in R and generate beautiful report.</p>
+<p><a href="/eda">See Full Report</a><br><a href="https://github.com/Louis-Tian/uda-dand/tree/p4/P4" target="_blank" rel="external">See Source Code</a></p>
 
-
-<h4 id="2-Turnoff-Juptyer-Token"><a href="#2-Turnoff-Juptyer-Token" class="headerlink" title="2. Turnoff Juptyer Token"></a>2. Turnoff Juptyer Token</h4><p>Go to <code>~/.jupyter/.jupyter_notebook_config.py</code> and set <code>c.Notebookapp.token=&#39;&#39;</code> to disable token. Since, we will be using SSH, we will still be secure without the token.</p>
-<h4 id="3-Start-Jupyter"><a href="#3-Start-Jupyter" class="headerlink" title="3. Start Jupyter"></a>3. Start Jupyter</h4><pre><code class="shell">
-jupyter notebook --port=8888
-</code></pre>
-
-
-<h4 id="4-Create-SSH-Tunnel"><a href="#4-Create-SSH-Tunnel" class="headerlink" title="4. Create SSH Tunnel"></a>4. Create SSH Tunnel</h4><pre><code class="shell">
-ssh -N -L localhost:8888:localhost:8888 remote_username@remote_ip_address
-</code></pre>
-The external ip address will change every time you launch a new instance. You need get the remote_ip_address from step 1 every time. There must be a way to chain the two steps together, but I haven't explored to much on this.
-
-
-#### 5. Config Hydrogen
-Change the `Hydrogen`
-<pre><code class="javascript">
-[{
-  "name": "Google Compute Engine",
-  "options": { "baseUrl": "http://localhost:8888"}
-}]
-</code></pre>
-
-
-<h4 id="6-Connect-Remote-Kernel"><a href="#6-Connect-Remote-Kernel" class="headerlink" title="6. Connect Remote Kernel"></a>6. Connect Remote Kernel</h4><ul>
-<li>Go to your <code>.py</code> file.</li>
-<li>type <code>cmd-shift-p</code> to bring up the command palette.</li>
-<li>Search for<code>Hydrogen: Connect To Remote Kernel</code> and press enter.</li>
-</ul>
-<h4 id="7-Enjoy-and-Happy-Coding"><a href="#7-Enjoy-and-Happy-Coding" class="headerlink" title="7.  Enjoy and Happy Coding."></a>7.  Enjoy and Happy Coding.</h4>
       </div>
       <div id="disqus_thread"></div>
 <script>
 
 var disqus_config = function () {
-this.page.url = 'http://louis-tian.github.io/2017-05-01-hydrogen_gce/';
-this.page.identifier = 'http://louis-tian.github.io/2017-05-01-hydrogen_gce/';ß
+this.page.url = 'http://louis-tian.github.io/2017-05-17-Exploratory-data-analysis-with-STYLE/';
+this.page.identifier = 'http://louis-tian.github.io/2017-05-17-Exploratory-data-analysis-with-STYLE/';ß
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
@@ -216,8 +111,62 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 
 </div>
+
+      </div>
+
+      <div class="four wide column">
+        <div class="ui">
+          <div>
+  <img class="ui tiny circular image" src="/images/photo.jpg">
+  <h3>Louis Tian</h3>
+  <i>I write in pseudo-english.
+    This is a blog mostly for myself to organise the my thoughts,
+    but your are welcome to wonder around.
+  </i>
+  <h5>
+    Economist &middot;
+    💻 Data Scientist &middot;
+    🌐 Web Dev &middot;
+    ☕ Caffeine Addict
+  </h5>
+  <div class="ui list">
+    <div class="item">
+      <i class="github icon"></i>
+      <div class="content">
+        https://github.com/Louis-Tian
+      </div>
+    </div>
+    <div class="item">
+      <i class="marker icon"></i>
+      <div class="content">
+        The Captial of Red Continent
+      </div>
+    </div>
+    <div class="item">
+      <i class="mail icon"></i>
+      <div class="content">
+        <a href="mailto:tianchuanting@gmail.com">tianchuanting@gmail.com</a>
+      </div>
+    </div>
+    <div class="item">
+      <i class="linkedin Linkedin Square icon"></i>
+      <div class="content">
+        <a href="www.linkedin.com/in/louis-tian">www.linkedin.com/in/louis-tian</a>
+      </div>
+    </div>
+  </div>
 </div>
 
+        </div>
+        <div class="ui vertical segment">
+          <h4>Recent Posts</h4>
+          <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017-05-28-hydrogen_gce/">Hydrogen + Google Compute Engine</a></li><li class="post-list-item"><a class="post-list-link" href="/2017-05-17-Exploratory-data-analysis-with-STYLE/">Exploratory Data Analysis w/ STYLE</a></li><li class="post-list-item"><a class="post-list-link" href="/2017-04-03-montyHall/">Monty Hall @ Done Right</a></li></ul>
+        </div>
+        <div class="ui vertical segment">
+          <h4>Tags</h4>
+          <a href="/tags/statistics/" style="font-size: 10px; color: #808080">statistics</a> <a href="/tags/R/" style="font-size: 10px; color: #808080">R</a> <a href="/tags/Machine-learning/" style="font-size: 10px; color: #808080">Machine learning</a> <a href="/tags/Hydrogen/" style="font-size: 10px; color: #808080">Hydrogen</a> <a href="/tags/Google-Compute-Engine/" style="font-size: 10px; color: #808080">Google Compute Engine</a> <a href="/tags/Exploratory-Data-Analysis/" style="font-size: 10px; color: #808080">Exploratory Data Analysis</a> <a href="/tags/Atom/" style="font-size: 10px; color: #808080">Atom</a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -239,7 +188,12 @@ s.setAttribute('data-timestamp', +new Date());
   </div>
 </div>
 
-  <script>hljs.initHighlightingOnLoad('atom-one-dark');</script>
+  <script>
+    hljs.initHighlightingOnLoad('atom-one-dark');
+    $('.special.cards .image').dimmer({
+      on: 'hover'
+    });
+  </script>
 </body>
 
 </html>
